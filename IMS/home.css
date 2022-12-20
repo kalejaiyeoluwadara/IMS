@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url('steve-johnson-H6fVgYvb7Ro-unsplash.jpg');
+    position: relative;
+    object-fit: contain;
+    
+    background-position: center;
+}
+span{
+    color: #ff00006b;
+}
+.container{
+   display: flex;
+   flex-direction:column;
+   min-height: 100vh;
+   background-color: rgba(0, 0, 0, 0.716);
+   align-items: center;
+   padding: 20px;
+   justify-content: center;  
+}
+p{
+    font-size: 20px;
+}
+h1{
+    font-size: 4.2rem;
+    margin-bottom: 20px;
+}
+
+.tabs{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.tabs div{
+    padding: 8px;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: 500;
+    transition-duration: 0.3s;
+}
+
+.tabs div:hover{
+    background-color:#ff000048;
+    border: none;
+}
