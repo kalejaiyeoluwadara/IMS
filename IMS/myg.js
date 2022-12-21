@@ -43,19 +43,30 @@ function shout(msg){
     let msgbox = document.getElementById('msg');
     msgbox.innerHTML = "You're in group " + msg.toUpperCase();
 }
-
+var bool = true;
+var lists = document.getElementsByTagName('li');
 function nav(){
-    var tab = document.querySelector('.tabs');
-    var nav = document.getElementById('navi');
-    let view = tab.style.visibility;
-    nav.style.height = '84px';
-    // tab.style.visibility = 'hidden';
-   if(view == 'visible'){
-    nav.style.height = '84px';
-    tab.style.visibility = 'hidden';
+    if(bool == true){
+        document.getElementById('main').style.height = '300px';
+        document.getElementById('links').style.visibility = 'visible';
+        document.getElementById('ul').style.transform = "translateX(0%)";
+        // for(let i = 0; i<lists.length;i++){
+        //     lists[i].style.transform = "translateX(0%)";
+        //     console.log(lists[i]);
+        // }
+        bool = false;
+    }
+    else if(bool == false){
+        document.getElementById('main').style.height = '90px';
+        document.getElementById('links').style.visibility = 'hidden';
+        document.getElementById('ul').style.transform = "translateX(-100%)";
+        // for(let i = 0; i<lists.length;i++){
+        //     lists[i].style.transform = "translateX(-100%)";
+        //     console.log(lists[i]);
+        // }
+        bool = true;
     }
     else{
-        tab.style.visibility = 'visible';
-        nav.style.height = '254px';
+        console.log('error');
     }
 }

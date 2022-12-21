@@ -41,11 +41,13 @@ h1{
     padding: 10px;
     background-color: transparent;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     cursor: pointer;
 }
 .tabs div{
+    margin-top: 20px;
     padding: 8px;
     border: 2px solid white;
     font-size: 20px;
@@ -54,6 +56,12 @@ h1{
 }
 
 .tabs div:hover{
-    background-color:#ff000048;
+    background-color:#1c5cff;
+    box-shadow: -5px 5px 10px #1c5cffa1,5px -5px 10px #1c5cffa1  ;
     border: none;
+}
+
+
+@media(max-width:900px){
+
 }
