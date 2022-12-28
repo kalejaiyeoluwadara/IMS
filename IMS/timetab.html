@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyGroup</title>
+    <link rel="icon" src="Gon_4_Standing_Outline_R Shadowless.png">
+    <title>Time table</title>
+    <link rel="stylesheet" href="timetab.css">
     <link rel="stylesheet" href="myg.css">
 </head>
 <body>
     <nav id='main'>
         <div class="subtitle">
             <div class="colord"><a href="home.html"><div id="logo">C<Span id='s'>S</Span></a></div></div>
-            <div id="nav"><img onclick="nav()"  src="Mouse_R.png"></div>    
+            <div id="nav"><img onclick="nav()"  src="Mouse_R.png"></div>     
         </div>
         <section id="links">
             <ul id="ul">
@@ -24,13 +26,14 @@
         </section>
     </nav>
     <main>
-         <h2>Know your Group<span> Computer Science</span></h2>
-
-        <div class="info">
-            <input type="text"  id="name" placeholder="Full Name: Surname FirstName" autocomplete="False">
-            <button onclick="enterb()" >Enter</button>
+                     <!-- Main -->
+        <div class="tables">
+            <div><a href="./pdf/Group A timetable.pdf" download> Group A</a></div>
+            <div><a href="./pdf/Group B timetable.pdf" download> Group B</a></div>
+            <div><a href="./pdf/Group C timetable.pdf" download> Group C</a></div>
+            <div><a href="./pdf/Group D timetable.pdf" download> Group D</a></div>
         </div>
-        <h2 id="msg"></h2>
+
     </main>
     <footer>
         <div class="bcontainer">
@@ -45,6 +48,7 @@
             Designed & Developed by Dara.
         </div>
     </footer>
+
 </body>
 <script src="myg.js"></script>
 </html>

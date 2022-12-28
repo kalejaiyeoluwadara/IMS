@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyGroup</title>
     <link rel="stylesheet" href="myg.css">
+    <link rel="stylesheet" href="login.css">
 </head>
-<body>
+<body onscroll="op()">
     <nav id='main'>
         <div class="subtitle">
             <div class="colord"><a href="home.html"><div id="logo">C<Span id='s'>S</Span></a></div></div>
@@ -24,15 +25,17 @@
         </section>
     </nav>
     <main>
-         <h2>Know your Group<span> Computer Science</span></h2>
+        <h1>Sign <span>In</span> to Cs IMs</h1>
+        <div id="form">
+            <input type="text" placeholder="userName" id="userName">
+            <input type="password" placeholder="Application Id" id="password">
 
-        <div class="info">
-            <input type="text"  id="name" placeholder="Full Name: Surname FirstName" autocomplete="False">
-            <button onclick="enterb()" >Enter</button>
+            <span id="login"  onclick="reset()">reset</span>
+
+            <button onclick="login_p()">Sign in</button>
         </div>
-        <h2 id="msg"></h2>
     </main>
-    <footer>
+    <footer id="footer">
         <div class="bcontainer">
         <div id="box"><a href="https://drive.google.com/drive/folders/1K_iidiJc4bgqPnsp_QV6AtpPbJcymC-w?usp=share_link" target="_blank"><img src="google-drive-32x32-1721666.png" alt="drive"></a></div>
         <div id="box"><a href="mygroup.html"><img src="user.png" alt="drive"></a></div>
@@ -46,5 +49,43 @@
         </div>
     </footer>
 </body>
+
+<script >
+    function op(){
+        let cp = document.getElementById('footer');
+        cp.style.opacity = 1; 
+    }
+    function login_p(){
+        let pass = document.getElementById('password');
+        let user_n = document.getElementById('userName');
+            if(localStorage.username){
+                if(localStorage.password != pass.value || localStorage.username != user_n.value ){
+                    alert("Invalid user Name or Password")
+                    clearA(pass,user_n);
+                }
+                else{
+                    alert("Successfully Logged in");
+                    clearA(pass,user_n);
+                }
+            }
+            else{
+                localStorage.username = user_n.value;
+                localStorage.password = pass.value;
+                alert("Account created");
+                clearA(pass,user_n);
+            } 
+
+    }
+
+    function clearA(x,y){
+        x.value = '';
+        y.value = '';
+    }
+    function reset(){
+        localStorage.clear();
+        alert('Reset');
+    }
+
+</script>
 <script src="myg.js"></script>
 </html>

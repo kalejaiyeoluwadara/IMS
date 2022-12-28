@@ -1,0 +1,22 @@
+.tables{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+.tables div{
+    padding:15px;
+    border: 1px solid #152127;
+    color: white;
+    margin-bottom: 30px;
+    transition-duration: .3s;
+    text-align: center;
+}
+.tables div:hover{
+    box-shadow:-1px 7px 15px #2291990f, -1px -3px 15px #4c1ffff2;
+    background-color:#1263a9;
+    cursor: pointer;
+    border: none;
+}

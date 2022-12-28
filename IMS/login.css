@@ -1,0 +1,30 @@
+input{
+    border-bottom: 1px solid rgb(108 191 255);
+    padding: 7px;
+    text-align: left;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 3px -3px 20px 0px #0000006e;
+    margin: 20px;
+    border-radius: 9px;
+}
+button{
+    border-radius: 30px;
+    line-height: 10px;
+    width: 200px;
+    margin: 0 auto;
+}
+footer{
+    opacity: .8;
+    transition-duration: .5s;
+}
+#login{
+    text-align: right;
+    color: white;
+    font-style: italic;
+    margin:10px;
+}

@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyGroup</title>
     <link rel="stylesheet" href="myg.css">
+    <link rel="stylesheet" href="info.css">
 </head>
-<body>
+<body onscroll="op()">
     <nav id='main'>
         <div class="subtitle">
             <div class="colord"><a href="home.html"><div id="logo">C<Span id='s'>S</Span></a></div></div>
@@ -24,15 +25,19 @@
         </section>
     </nav>
     <main>
-         <h2>Know your Group<span> Computer Science</span></h2>
-
-        <div class="info">
-            <input type="text"  id="name" placeholder="Full Name: Surname FirstName" autocomplete="False">
-            <button onclick="enterb()" >Enter</button>
+       <h1>Information</h1>
+        <div class="card">
+            <img id="cover" src="pexels-adrien-olichon-2387793.jpg">
+            <div class="inner">
+            <h1>About The Website</h1>
+            <span id="span">This is a website built for computer science students...</span>
+            <button id="btn" onclick="more()"><a href="info2.html">Read more</a></button>
         </div>
-        <h2 id="msg"></h2>
+        </div>
+       
+        </div>
     </main>
-    <footer>
+    <footer id="footer">
         <div class="bcontainer">
         <div id="box"><a href="https://drive.google.com/drive/folders/1K_iidiJc4bgqPnsp_QV6AtpPbJcymC-w?usp=share_link" target="_blank"><img src="google-drive-32x32-1721666.png" alt="drive"></a></div>
         <div id="box"><a href="mygroup.html"><img src="user.png" alt="drive"></a></div>
